@@ -7,11 +7,11 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ganknow',
+    title: 'Gank - Earn More From Your Content',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Gank is a content membership platform that helps content creators accept donations, manage memberships and sell merch, for free.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
