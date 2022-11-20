@@ -14,7 +14,9 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.2.0",
+    "@vue/eslint-config-airbnb": "^5.3.0",
     "core-js": "^3.15.1",
+    "eslint-import-resolver-alias": "^1.1.2",
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.27.2"
   },
