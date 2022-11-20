@@ -1,3 +1,6 @@
+import en from './i18n/en'
+import id from './i18n/id'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -44,7 +47,9 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    // https://i18n.nuxtjs.org
+    'nuxt-i18n'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -54,6 +59,19 @@ export default {
   pwa: {
     manifest: {
       lang: 'en'
+    }
+  },
+
+  // i18n option: https://i18n.nuxtjs.org/options-reference
+  i18n: {
+    locales: ['en', 'id'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en,
+        id
+      }
     }
   },
 

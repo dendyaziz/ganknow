@@ -6,7 +6,7 @@
     <div class="grid grid-cols-10 gap-4">
       <!-- Left sidebar -->
       <div class="col-span-2">
-        <div>Sidebar</div>
+        <Sidebar />
       </div>
       <!-- Main content -->
       <div class="col-span-6">
