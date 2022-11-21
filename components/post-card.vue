@@ -150,7 +150,7 @@
           <!-- Send button -->
           <button
             type="submit"
-            class="transition-width overflow-hidden text-primary-500 dark:text-primary-400 hover:text-primary-400 dark:hover:text-primary-300 flex items-center justify-center h-[40px]"
+            class="transition-width overflow-hidden text-primary-500 dark:text-primary-400 hover:text-primary-300 dark:hover:text-primary-300 flex items-center justify-center h-[40px]"
             :class="{'ml-1 w-[48px]': comment, 'w-0': !comment}"
           >
             <svg
