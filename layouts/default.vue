@@ -23,16 +23,16 @@
 <script>
 export default {
   name: 'Default',
-  head () {
+  head() {
     return {
       htmlAttrs: {
-        class: 'dark'
+        class: 'dark',
       },
       bodyAttrs: {
-        class: 'antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900'
-      }
+        class: 'antialiased text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-900',
+      },
     }
-  }
+  },
 }
 </script>
 

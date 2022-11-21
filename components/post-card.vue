@@ -33,31 +33,10 @@
         <small class="text-slate-500 dark:text-slate-400">{{ $moment(createdAt).fromNow() }}</small>
       </div>
     </div>
-    <div class="text-slate-900 dark:text-white mt-4 text-sm">
-      <h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">
-        Ways To Repurpose Your Content
-      </h3>
-      <p class="mb-3">
-        Tore out another page from my secret scrapbook about repurposing your content. Here are a few suggestions to increase the mileage of your older content through repurposing and distribution. You'll never know when your older content will go viral and open doors to new opportunities.
-      </p>
-      <p class="mb-3">
-        Remember, each piece of content you create is like your baby. Give it a meaningful and purposeful life, not just an existence for a moment in time.
-      </p>
-      <p class="mb-3">
-        As in life, always think about how to make the best out of anything and everything, regardless of any situation.
-      </p>
-      <p class="mb-3">Download a high res copy at <a
-        href="https://drive.google.com/file/d/1e2Y4Yf9qAjWMTof2iEoQXRTCbUGlW7Uh/view?usp=share_link"
-        target="_blank"
-        rel="noopener noreferrer ugc"
-      >https://drive.google.com/file/d/1e2Y4Yf9qAjWMTof2iEoQXRTCbUGlW7Uh/view?usp=share_link</a></p>
-      <p class="mb-3">
-        Ok. I shall stop here before I become a life coach or something...  Love you all. 😘
-      </p>
-      <p class="mb-3">
-        Or get it for free at my Gank Shop.
-      </p>
-    </div>
+    <div
+      class="text-slate-900 dark:text-white mt-4 text-sm"
+      v-html="content"
+    />
   </div>
 </template>
 
