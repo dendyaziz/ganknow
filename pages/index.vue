@@ -128,10 +128,10 @@ export default {
             + '      </p>\n'
             + '      <p>Click the link below to know more: </p>'
             + '      <p><a\n'
-            + '        href="http://bit.ly/3OmrXQg"\n'
+            + '        href="https://ganknow.com/3OmrXQg"\n'
             + '        target="_blank"\n'
             + '        rel="noopener noreferrer ugc"\n'
-            + '      >http://bit.ly/3OmrXQg</a></p>\n',
+            + '      >https://ganknow.com/3OmrXQg</a></p>\n',
           comments: [
             {
               id: 1,

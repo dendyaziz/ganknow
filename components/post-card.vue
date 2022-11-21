@@ -53,11 +53,14 @@
     </div>
 
     <!-- Post image -->
-    <div v-if="imageUrl">
+    <div
+      v-if="imageUrl"
+      class="bg-slate-100 dark:bg-slate-900/50 cursor-pointer"
+    >
       <img
         :src="imageUrl"
         alt="Post image"
-        class="w-100 cursor-pointer"
+        class="w-100 max-h-[480px] mx-auto"
       >
     </div>
 
