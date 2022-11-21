@@ -41,10 +41,12 @@
     <post-card
       v-for="item in posts"
       :key="`post-${item.id}`"
+      :post-id="item.user"
       :user="item.user"
       :created-at="item.created_at"
       :content="item.content"
       :image-url="item.image_url"
+      :comments="item.comments"
     />
   </div>
 </template>
@@ -86,6 +88,28 @@ export default {
             + '        target="_blank"\n'
             + '        rel="noopener noreferrer ugc"\n'
             + '      >https://ganknow.com/blog/gank-creator-referral-program/</a></p>\n',
+          comments: [
+            {
+              id: 1,
+              comment: 'Definitely will try it today.',
+              created_at: '2022-11-15T09:37:45.000000Z',
+              user: {
+                name: 'Jess no Limit',
+                is_verified: true,
+                image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
+              },
+            },
+            {
+              id: 2,
+              comment: 'I got $6 without even creating any content.',
+              created_at: '2022-11-16T09:37:45.000000Z',
+              user: {
+                name: 'Dendy Armandiaz (You)',
+                is_verified: false,
+                image_url: 'https://lh3.googleusercontent.com/a/ALm5wu3JFr_0RoSfdrMRjRigEcFEVXpv-oBMQsTtF4xqzIY=s96-c',
+              },
+            },
+          ],
         },
       ],
     }
