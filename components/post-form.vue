@@ -91,7 +91,7 @@
               <div class="flex items-center">
                 <span class="mr-4">{{ $t('Add to your post') }}</span>
                 <!-- Upload image/video -->
-                <post-menu-button class="text-green-600 dark:text-green-400 mr-1">
+                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="26"
                     height="26"
@@ -113,7 +113,7 @@
                   </svg>
                 </post-menu-button>
                 <!-- Add live video -->
-                <post-menu-button class="text-red-600 dark:text-red-400 mr-1">
+                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="32"
                     height="32"
@@ -131,7 +131,7 @@
                   </svg>
                 </post-menu-button>
                 <!-- Add Link -->
-                <post-menu-button class="text-cyan-600 dark:text-cyan-400 mr-1">
+                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="24"
                     height="24"
@@ -231,7 +231,7 @@
           <a
             href="#"
             class="font-medium text-sm"
-          >Change price</a>
+          >{{ $t('Change price') }}</a>
         </li>
       </ul>
     </modal>

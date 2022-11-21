@@ -56,7 +56,7 @@
     </div>
 
     <!-- Actions -->
-    <div class="grid grid-cols-3 gap-2 border-b border-slate-700 mx-4 py-2">
+    <div class="grid grid-cols-3 gap-2 border-b border-slate-200 dark:border-slate-700 mx-4 py-2">
       <post-action-button>
         <svg
           width="24"
@@ -104,7 +104,7 @@
       </post-action-button>
     </div>
 
-    <div class="px-4">
+    <div class="px-4 py-4">
       Comment
     </div>
   </div>

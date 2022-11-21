@@ -5,4 +5,5 @@ export default {
   'Add to your post': 'Add to your post',
   Current: 'Current',
   Share: 'Share',
+  'Change price': 'Change price',
 }
