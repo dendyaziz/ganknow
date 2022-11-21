@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white dark:bg-slate-800 md:rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-4">
-    <div class="flex flex-row">
+  <div class="bg-white dark:bg-slate-800 md:rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-2 md:mb-4">
+    <div class="sm:flex">
       <!-- Avatar -->
       <img
         src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
@@ -17,7 +17,7 @@
           <textarea
             id="content"
             v-model="content"
-            class="w-full text-slate-900 dark:text-white bg-white dark:bg-slate-800 text-lg py-2 outline-none resize-none"
+            class="w-full text-slate-900 dark:text-white bg-white dark:bg-slate-800 md:text-lg py-4 sm:py-2 sm:mt-0 outline-none resize-none"
             :placeholder="$t('Share something with your supporters?')"
             rows="1"
             required

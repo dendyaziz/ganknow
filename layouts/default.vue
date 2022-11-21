@@ -29,7 +29,7 @@ export default {
         class: 'dark',
       },
       bodyAttrs: {
-        class: 'antialiased text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-900',
+        class: 'antialiased text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-850 dark:md:bg-slate-900',
       },
     }
   },

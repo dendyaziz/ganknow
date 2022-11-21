@@ -35,6 +35,9 @@ module.exports = {
           800: '#183960',
           900: '#193453',
         },
+        slate: {
+          850: '#172133',
+        },
       },
       transitionProperty: {
         height: 'height',
