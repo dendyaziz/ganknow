@@ -12,11 +12,15 @@
 a {
   color: theme('colors.blue.600');
 
-  html.dark & {
-    color: theme('colors.blue.400');
+  &:hover {
+    color: theme('colors.blue.500');
   }
 
-  &:hover {
-    text-decoration: underline;
+  html.dark & {
+    color: theme('colors.blue.400');
+
+    &:hover {
+      color: theme('colors.blue.300');
+    }
   }
 }

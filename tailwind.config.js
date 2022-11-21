@@ -15,6 +15,12 @@ module.exports = {
           500: '#FF4E58',
         },
       },
+      transitionProperty: {
+        height: 'height',
+        spacing: 'margin, padding',
+        placement: 'top, right, bottom, left',
+        slide: 'top, opacity',
+      },
       container: {
         center: true,
       },
