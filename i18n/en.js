@@ -6,4 +6,5 @@ export default {
   Current: 'Current',
   Share: 'Share',
   'Change price': 'Change price',
+  'Write a comment': 'Write a comment',
 }

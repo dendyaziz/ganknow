@@ -121,11 +121,58 @@
         :comment="item.comment"
         :image-url="item.image_url"
       />
+
+      <form @submit.prevent="submit">
+        <div class="flex flex-row">
+          <!-- Avatar -->
+          <img
+            src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
+            class="rounded-full h-min mr-3"
+            alt="Avatar"
+            width="36px"
+            height="36px"
+          >
+
+          <!-- Textarea -->
+          <div class="w-full">
+            <!-- Post message -->
+            <textarea
+              id="content"
+              v-model="comment"
+              class="w-full bg-secondary-50 dark:bg-secondary-700 text-slate-900 dark:text-white rounded-lg p-2 resize-none"
+              :placeholder="`${$t('Write a comment')}..`"
+              rows="1"
+              required
+              @input="growTextarea"
+            />
+          </div>
+
+          <!-- Send button -->
+          <button
+            v-if="comment"
+            type="submit"
+            class="text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 flex items-center justify-center h-[40px] px-2 ml-1"
+          >
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.7 10.7C21.4 10.1 20.9 9.69999 20.4 9.39999L6.40002 2.39999C4.90002 1.69999 3.10002 2.29999 2.40002 3.69999C1.90002 4.49999 1.90002 5.39999 2.30002 6.19999L4.40002 11H13.5C14.1 11 14.5 11.4 14.5 12C14.5 12.6 14.1 13 13.5 13H4.40002L2.30002 17.8C1.60002 19.3 2.30002 21.1 3.80002 21.8C4.20002 21.9 4.60002 22 5.00002 22C5.50002 22 5.90002 21.9 6.30002 21.7L20.3 14.7C21.8 13.9 22.4 12.1 21.7 10.7Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </template>
 
 <script>
+/* eslint-disable no-param-reassign */
 export default {
   props: {
     postId: {
@@ -151,6 +198,20 @@ export default {
     comments: {
       type: Array,
       default: () => [],
+    },
+  },
+  data() {
+    return {
+      comment: '',
+    }
+  },
+  methods: {
+    submit() {
+
+    },
+    growTextarea(event) {
+      event.target.style.height = '5px'
+      event.target.style.height = `${event.target.scrollHeight}px`
     },
   },
 }

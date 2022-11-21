@@ -10,7 +10,8 @@
     >
 
     <div>
-      <div class="bg-secondary-400 dark:bg-secondary-700 text-slate-900 dark:text-white px-3 py-2 rounded-bl-lg rounded-br-lg rounded-tr-lg">
+      <!-- Comment bubble -->
+      <div class="bg-secondary-50 dark:bg-secondary-700 text-slate-900 dark:text-white px-3 py-2 rounded-bl-lg rounded-br-lg rounded-tr-lg">
         <!-- User name -->
         <div class="flex flex-row text-slate-900 dark:text-white items-center">
           <a
