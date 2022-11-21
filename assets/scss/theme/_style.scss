@@ -9,11 +9,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+p a {
   color: theme('colors.blue.600');
 
   &:hover {
     color: theme('colors.blue.500');
+    text-decoration: underline;
   }
 
   html.dark & {
