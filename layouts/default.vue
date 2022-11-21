@@ -9,7 +9,7 @@
         <Sidebar />
       </div>
       <!-- Main content -->
-      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5">
+      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5 sm:px-4">
         <Nuxt />
       </div>
       <!-- Right sidebar -->
