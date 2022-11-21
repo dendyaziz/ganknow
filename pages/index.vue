@@ -44,8 +44,10 @@
       :user="item.user"
       :created-at="item.created_at"
       :content="item.content"
+      :image-url="item.image_url"
     />
-  </div></template>
+  </div>
+</template>
 
 <script>
 export default {
@@ -54,35 +56,36 @@ export default {
       posts: [
         {
           id: 1,
-          created_at: '2022-11-16T09:37:45.000000Z',
+          created_at: '2022-11-14T09:37:45.000000Z',
+          image_url: 'https://i.ibb.co/7Kf3yjs/Screenshot-2022-11-21-at-16-55-51.png',
           user: {
             name: 'Paddie',
             is_verified: true,
             image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
           },
           content: '<h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">\n'
-            + '        Ways To Repurpose Your Content\n'
+            + '        Gank Creator Referral Program\n'
             + '      </h3>\n'
             + '      <p class="mb-3">\n'
-            + '        Tore out another page from my secret scrapbook about repurposing your content. Here are a few suggestions to increase the mileage of your older content through repurposing and distribution. You\'ll never know when your older content will go viral and open doors to new opportunities.\n'
+            + '        Hiya 😻FAMssss~ It\'s me Paddie again~ 💖🤩\n'
             + '      </p>\n'
             + '      <p class="mb-3">\n'
-            + '        Remember, each piece of content you create is like your baby. Give it a meaningful and purposeful life, not just an existence for a moment in time.\n'
+            + '        Do you want to earn more from your Gank profile? You can now earn more by just sharing your referral link!\n'
             + '      </p>\n'
             + '      <p class="mb-3">\n'
-            + '        As in life, always think about how to make the best out of anything and everything, regardless of any situation.\n'
+            + '        The Gank’s Referral Program allows existing Gank creators to refer other content creators to Gank. When a fellow content creator uses your unique referral link to sign up to Gank, you will be awarded $2 per referral once they (the referred) earns their first dollar on Gank. This is applicable to new accounts created through your unique referral link only.\n'
             + '      </p>\n'
-            + '      <p class="mb-3">Download a high res copy at: <a\n'
-            + '        href="https://drive.google.com/file/d/1e2Y4Yf9qAjWMTof2iEoQXRTCbUGlW7Uh/view?usp=share_link"\n'
+            + '      <p class="mb-3"><a\n'
+            + '        href="https://ganknow.com/manage/referral"\n'
             + '        target="_blank"\n'
             + '        rel="noopener noreferrer ugc"\n'
-            + '      >https://drive.google.com/file/d/1e2Y4Yf9qAjWMTof2iEoQXRTCbUGlW7Uh/view?usp=share_link</a></p>\n'
-            + '      <p class="mb-3">\n'
-            + '        Ok. I shall stop here before I become a life coach or something...  Love you all. 😘\n'
-            + '      </p>\n'
-            + '      <p class="mb-3">\n'
-            + '        Or get it for free at my Gank Shop.\n'
-            + '      </p>',
+            + '      >https://ganknow.com/manage/referral</a></p>'
+            + '      <p>Click below to learn more! (FAQs & details) </p>'
+            + '      <p><a\n'
+            + '        href="https://ganknow.com/blog/gank-creator-referral-program/"\n'
+            + '        target="_blank"\n'
+            + '        rel="noopener noreferrer ugc"\n'
+            + '      >https://ganknow.com/blog/gank-creator-referral-program/</a></p>\n',
         },
       ],
     }
