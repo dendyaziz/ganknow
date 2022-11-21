@@ -106,7 +106,7 @@ export default {
               user: {
                 name: 'Dendy Armandiaz (You)',
                 is_verified: false,
-                image_url: 'https://lh3.googleusercontent.com/a/ALm5wu3JFr_0RoSfdrMRjRigEcFEVXpv-oBMQsTtF4xqzIY=s96-c',
+                image_url: 'https://i.ibb.co/d7HBdMF/avatar-dendy.jpg',
               },
             },
           ],

@@ -3,7 +3,7 @@
     <div class="flex flex-row">
       <!-- Avatar -->
       <img
-        src="https://lh3.googleusercontent.com/a/ALm5wu3JFr_0RoSfdrMRjRigEcFEVXpv-oBMQsTtF4xqzIY=s96-c"
+        src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
         class="rounded-full h-min mr-4"
         alt="Avatar"
         width="48px"

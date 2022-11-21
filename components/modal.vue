@@ -8,7 +8,7 @@
       :aria-hidden="!show"
       :aria-modal="show"
       :role="show ? 'dialog' : undefined"
-      class="transition-slide duration-300 top-[-100px] opacity-0 overflow-y-auto overflow-x-hidden fixed right-0 left-0 z-50 px-4 pb-4 pt-20 w-full h-modal justify-center md:h-full"
+      class="transition-slide duration-300 top-[-36px] opacity-0 overflow-y-auto overflow-x-hidden fixed right-0 left-0 z-50 px-4 pb-4 pt-20 w-full h-modal justify-center md:h-full"
       :class="{'flex': show, 'hidden': !show}"
       @click="close"
     >
@@ -78,10 +78,10 @@ export default {
 
         setTimeout(() => {
           this.$refs.modal.classList.add('top-0', 'opacity-100')
-          this.$refs.modal.classList.remove('top-[-100px]', 'opacity-0')
+          this.$refs.modal.classList.remove('top-[-36px]', 'opacity-0')
         }, 1)
       } else {
-        this.$refs.modal.classList.add('top-[-100px]', 'opacity-0')
+        this.$refs.modal.classList.add('top-[-36px]', 'opacity-0')
         this.$refs.modal.classList.remove('top-0', 'opacity-100')
 
         setTimeout(() => {
