@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-4">
+  <div class="bg-white dark:bg-slate-800 md:rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-4">
     <div class="flex flex-row">
       <!-- Avatar -->
       <img

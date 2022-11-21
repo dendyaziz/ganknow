@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-slate-800 rounded-lg ring-1 ring-slate-900/5 mb-4">
+  <div class="bg-white dark:bg-slate-800 md:rounded-lg ring-1 ring-slate-900/5 mb-4">
     <div class="px-6 py-4">
       <!-- User -->
       <div class="flex items-center">
