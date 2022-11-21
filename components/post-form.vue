@@ -91,7 +91,7 @@
               <div class="flex items-center">
                 <span class="mr-4">{{ $t('Add to your post') }}</span>
                 <!-- Upload image/video -->
-                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
+                <PostMenuButton class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="26"
                     height="26"
@@ -111,9 +111,9 @@
                       fill-opacity="0.2"
                     />
                   </svg>
-                </post-menu-button>
+                </PostMenuButton>
                 <!-- Add live video -->
-                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
+                <PostMenuButton class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="32"
                     height="32"
@@ -129,9 +129,9 @@
                       d="M21.8944 7.55372C21.6476 7.0594 21.0468 6.85877 20.5525 7.1056L16.9883 8.8877C16.9898 8.92585 16.9997 8.96162 16.9998 9.00013V15.0001C16.9997 15.0386 16.9898 15.0744 16.9883 15.1126L20.5525 16.8947C20.6914 16.9639 20.8446 17.0001 20.9998 17.0001C21.5519 16.9998 21.9995 16.5522 21.9998 16.0001V8.00013C21.9997 7.84516 21.9636 7.69233 21.8944 7.55372Z"
                     />
                   </svg>
-                </post-menu-button>
+                </PostMenuButton>
                 <!-- Add Link -->
-                <post-menu-button class="text-primary-600 dark:text-primary-400 mr-1">
+                <PostMenuButton class="text-primary-600 dark:text-primary-400 mr-1">
                   <svg
                     width="24"
                     height="24"
@@ -150,7 +150,7 @@
                       d="M21 18H20V17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16C18.7348 16 18.4804 16.1054 18.2929 16.2929C18.1054 16.4804 18 16.7348 18 17V18H17C16.7348 18 16.4804 18.1054 16.2929 18.2929C16.1054 18.4804 16 18.7348 16 19C16 19.2652 16.1054 19.5196 16.2929 19.7071C16.4804 19.8946 16.7348 20 17 20H18V21C18 21.2652 18.1054 21.5196 18.2929 21.7071C18.4804 21.8946 18.7348 22 19 22C19.2652 22 19.5196 21.8946 19.7071 21.7071C19.8946 21.5196 20 21.2652 20 21V20H21C21.2652 20 21.5196 19.8946 21.7071 19.7071C21.8946 19.5196 22 19.2652 22 19C22 18.7348 21.8946 18.4804 21.7071 18.2929C21.5196 18.1054 21.2652 18 21 18Z"
                     />
                   </svg>
-                </post-menu-button>
+                </PostMenuButton>
               </div>
             </div>
 
@@ -168,7 +168,7 @@
     </div>
 
     <!-- Visibility selector modal -->
-    <modal
+    <Modal
       v-model="visibilityModalShow"
       :title="$t('Select visibility')"
     >
@@ -234,7 +234,7 @@
           >{{ $t('Change price') }}</a>
         </li>
       </ul>
-    </modal>
+    </Modal>
   </div>
 </template>
 

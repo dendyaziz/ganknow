@@ -66,7 +66,7 @@
 
     <!-- Actions -->
     <div class="grid grid-cols-3 gap-2 border-b border-slate-200 dark:border-slate-700 mx-4 mb-2 py-2">
-      <post-action-button>
+      <PostActionButton>
         <svg
           width="24"
           height="24"
@@ -80,8 +80,8 @@
         </svg>
 
         <span class="ml-1">89</span>
-      </post-action-button>
-      <post-action-button>
+      </PostActionButton>
+      <PostActionButton>
         <svg
           width="24"
           height="24"
@@ -95,8 +95,8 @@
         </svg>
 
         <span class="ml-1">12</span>
-      </post-action-button>
-      <post-action-button>
+      </PostActionButton>
+      <PostActionButton>
         <svg
           width="24"
           height="24"
@@ -110,7 +110,7 @@
         </svg>
 
         <span class="ml-1">{{ $t('Share') }}</span>
-      </post-action-button>
+      </PostActionButton>
     </div>
 
     <!-- Load previous comments -->
@@ -120,7 +120,7 @@
 
     <!-- Comments -->
     <div class="px-4 py-3">
-      <post-comment
+      <PostComment
         v-for="item in comments"
         :key="`post-${postId}-comment-${item.id}`"
         :user="item.user"

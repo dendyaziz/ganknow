@@ -35,10 +35,10 @@
     </div>
 
     <!-- Write post -->
-    <post-form />
+    <PostForm />
 
     <!-- Posts -->
-    <post-card
+    <PostCard
       v-for="item in posts"
       :key="`post-${item.id}`"
       :post-id="item.user"
