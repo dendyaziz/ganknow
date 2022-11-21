@@ -3,7 +3,7 @@
     <div class="flex flex-row">
       <!-- Avatar -->
       <img
-        src="https://i.ibb.co/8bRSrjW/download-1.jpg"
+        :src="user.image_url"
         class="rounded-full h-min mr-4"
         alt="Avatar"
         width="48px"
@@ -13,9 +13,12 @@
       <div class="w-full">
         <!-- User name -->
         <div class="flex flex-row text-slate-900 dark:text-white items-center">
-          <span class="font-medium">Jess no limit</span>
+          <span class="font-medium">{{ user.name }}</span>
 
-          <span class="text-red-500 ml-1">
+          <span
+            v-if="user.is_verified"
+            class="text-primary-500 ml-1"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -43,6 +46,10 @@
 <script>
 export default {
   props: {
+    user: {
+      type: Object,
+      required: true,
+    },
     content: {
       type: String,
       required: true,

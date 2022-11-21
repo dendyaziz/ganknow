@@ -10,6 +10,11 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        primary: {
+          500: '#FF4E58',
+        },
+      },
       container: {
         center: true,
       },

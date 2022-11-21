@@ -82,6 +82,7 @@
     <post-card
       v-for="item in posts"
       :key="`post-${item.id}`"
+      :user="item.user"
       :created-at="item.created_at"
       :content="item.content"
     />
@@ -95,6 +96,11 @@ export default {
         {
           id: 1,
           created_at: '2022-11-16T09:37:45.000000Z',
+          user: {
+            name: 'Jess no limit',
+            is_verified: true,
+            image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
+          },
           content: '<h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">\n'
             + '        Ways To Repurpose Your Content\n'
             + '      </h3>\n'
@@ -107,7 +113,7 @@ export default {
             + '      <p class="mb-3">\n'
             + '        As in life, always think about how to make the best out of anything and everything, regardless of any situation.\n'
             + '      </p>\n'
-            + '      <p class="mb-3">Download a high res copy at <a\n'
+            + '      <p class="mb-3">Download a high res copy at: <a\n'
             + '        href="https://drive.google.com/file/d/1e2Y4Yf9qAjWMTof2iEoQXRTCbUGlW7Uh/view?usp=share_link"\n'
             + '        target="_blank"\n'
             + '        rel="noopener noreferrer ugc"\n'
