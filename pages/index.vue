@@ -15,8 +15,10 @@
       </div>
     </div>
 
-    <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-4 ring-1 ring-slate-900/5 shadow-xl">
+    <!-- Write post -->
+    <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-4">
       <div class="flex flex-row">
+        <!-- Avatar -->
         <img
           src="https://lh3.googleusercontent.com/a/ALm5wu3JFr_0RoSfdrMRjRigEcFEVXpv-oBMQsTtF4xqzIY=s96-c"
           class="rounded-full h-min mr-4"
@@ -56,11 +58,27 @@
         </div>
       </div>
     </div>
-  </div>
-</template>
+
+    <!-- Posts -->
+    <post-card
+      v-for="item in posts"
+      :key="`post-${item.id}`"
+      :created-at="item.created_at"
+    />
+  </div></template>
 
 <script>
 export default {
+  data() {
+    return {
+      posts: [
+        {
+          id: 1,
+          created_at: '2022-11-16T09:37:45.000000Z',
+        },
+      ],
+    }
+  },
   methods: {
     growTextarea(event) {
       // eslint-disable-next-line no-param-reassign

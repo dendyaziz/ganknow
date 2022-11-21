@@ -8,3 +8,15 @@
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+a {
+  color: theme('colors.blue.600');
+
+  html.dark & {
+    color: theme('colors.blue.400');
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

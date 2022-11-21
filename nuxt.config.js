@@ -50,6 +50,7 @@ export default {
     '@nuxtjs/pwa',
     // https://i18n.nuxtjs.org
     'nuxt-i18n',
+    '@nuxtjs/moment',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -73,6 +74,13 @@ export default {
         id,
       },
     },
+  },
+
+  // Moment
+  moment: {
+    defaultTimezone: 'Asia/Jakarta',
+    locales: ['en-sg', 'id'],
+    defaultLocale: 'en-sg',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
