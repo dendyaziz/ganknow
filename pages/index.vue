@@ -56,9 +56,9 @@ export default {
           id: 1,
           created_at: '2022-11-16T09:37:45.000000Z',
           user: {
-            name: 'Jess no limit',
+            name: 'Paddie',
             is_verified: true,
-            image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
+            image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
           },
           content: '<h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">\n'
             + '        Ways To Repurpose Your Content\n'

@@ -13,7 +13,7 @@
       <div class="w-full">
         <!-- User name -->
         <div class="flex flex-row text-slate-900 dark:text-white items-center">
-          <span class="font-medium">{{ user.name }}</span>
+          <span class="font-bold">{{ user.name }}</span>
 
           <span
             v-if="user.is_verified"
