@@ -38,6 +38,7 @@ module.exports = {
       },
       transitionProperty: {
         height: 'height',
+        width: 'width',
         spacing: 'margin, padding',
         placement: 'top, right, bottom, left',
         slide: 'top, opacity',

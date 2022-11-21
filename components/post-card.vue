@@ -139,7 +139,7 @@
             <textarea
               id="content"
               v-model="comment"
-              class="w-full bg-secondary-50 dark:bg-secondary-700 text-slate-900 dark:text-white rounded-lg p-2 resize-none"
+              class="w-full bg-secondary-50 dark:bg-secondary-700 text-slate-900 dark:text-white rounded-lg px-3 py-2 outline-none resize-none"
               :placeholder="`${$t('Write a comment')}..`"
               rows="1"
               required
@@ -149,9 +149,9 @@
 
           <!-- Send button -->
           <button
-            v-if="comment"
             type="submit"
-            class="text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 flex items-center justify-center h-[40px] px-2 ml-1"
+            class="transition-width overflow-hidden text-primary-600 dark:text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 flex items-center justify-center h-[40px]"
+            :class="{'ml-1 w-[48px]': comment, 'w-0': !comment}"
           >
             <svg
               width="28"
