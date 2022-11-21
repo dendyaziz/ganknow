@@ -230,7 +230,7 @@
 
           <a
             href="#"
-            class="font-medium text-sm"
+            class="font-medium hover:text-slate-700 dark:hover:text-slate-300 hover:underline text-sm"
           >{{ $t('Change price') }}</a>
         </li>
       </ul>
