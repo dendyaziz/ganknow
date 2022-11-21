@@ -12,7 +12,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
+          50: '#ffdbe0',
+          100: '#FFB0BB',
+          200: '#FF97A2',
+          300: '#FF7E8A',
+          400: '#FF6571',
           500: '#FF4E58',
+          600: '#E7445C',
+          700: '#D03B5E',
+          800: '#B8325E',
+          900: '#A12A5C',
         },
       },
       transitionProperty: {
