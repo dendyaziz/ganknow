@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:max-w-[680px] mx-auto">
+  <div class="max-w-[680px] mx-auto">
     <!-- Alert -->
     <div class="bg-yellow-500/10 hover:bg-yellow-500/20 hover:cursor-pointer rounded-lg pl-4 pr-6 py-4 mb-4 ring-1 ring-yellow-500/70 flex flex-row items-start">
       <!-- Icon -->

@@ -3,17 +3,17 @@
     <!-- Navbar -->
     <Navbar />
 
-    <div class="grid grid-cols-10 gap-4">
+    <div class="grid md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 gap-4">
       <!-- Left sidebar -->
-      <div class="col-span-2">
+      <div class="xl:col-span-2 hidden xl:block">
         <Sidebar />
       </div>
       <!-- Main content -->
-      <div class="col-span-6">
+      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5">
         <Nuxt />
       </div>
       <!-- Right sidebar -->
-      <div class="col-span-2">
+      <div class="md:col-span-2 lg:col-span-3 xl:col-span-2 hidden md:block">
         <div>Sidebar</div>
       </div>
     </div>
