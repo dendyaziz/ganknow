@@ -73,7 +73,7 @@
           />
         </svg>
 
-        <span class="ml-1">25</span>
+        <span class="ml-1">89</span>
       </post-action-button>
       <post-action-button>
         <svg
@@ -88,7 +88,7 @@
           />
         </svg>
 
-        <span class="ml-1">25</span>
+        <span class="ml-1">12</span>
       </post-action-button>
       <post-action-button>
         <svg
@@ -107,6 +107,7 @@
       </post-action-button>
     </div>
 
+    <!-- Load previous comments -->
     <span
       class="px-4 hover:cursor-pointer text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
     >{{ $t('See previous comments') }}</span>
@@ -122,6 +123,7 @@
         :image-url="item.image_url"
       />
 
+      <!-- Write comment -->
       <form @submit.prevent="submit">
         <div class="flex flex-row">
           <!-- Avatar -->

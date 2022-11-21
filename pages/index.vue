@@ -90,16 +90,6 @@ export default {
             + '      >https://ganknow.com/blog/gank-creator-referral-program/</a></p>\n',
           comments: [
             {
-              id: 1,
-              comment: 'Definitely will try it today.',
-              created_at: '2022-11-15T09:37:45.000000Z',
-              user: {
-                name: 'Jess no Limit',
-                is_verified: true,
-                image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
-              },
-            },
-            {
               id: 2,
               comment: 'I got $6 without even creating any content.',
               created_at: '2022-11-16T09:37:45.000000Z',
@@ -107,6 +97,16 @@ export default {
                 name: 'Dendy Armandiaz (You)',
                 is_verified: false,
                 image_url: 'https://i.ibb.co/d7HBdMF/avatar-dendy.jpg',
+              },
+            },
+            {
+              id: 1,
+              comment: 'Definitely will try it today.',
+              created_at: '2022-11-15T09:37:45.000000Z',
+              user: {
+                name: 'Jess no Limit',
+                is_verified: true,
+                image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
               },
             },
           ],
