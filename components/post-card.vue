@@ -2,7 +2,7 @@
   <div class="bg-white dark:bg-slate-800 rounded-lg ring-1 ring-slate-900/5 mb-4">
     <div class="px-6 py-4">
       <!-- User -->
-      <div class="flex flex-row">
+      <div class="flex items-center">
         <!-- Avatar -->
         <img
           :src="user.image_url"
@@ -38,7 +38,9 @@
             </span>
           </div>
           <!-- time -->
-          <small class="text-slate-500 dark:text-slate-400">{{ $moment(createdAt).fromNow() }}</small>
+          <div class="text-slate-500 dark:text-slate-400 text-sm mt-1">
+            {{ $moment(createdAt).fromNow() }}
+          </div>
         </div>
       </div>
 
