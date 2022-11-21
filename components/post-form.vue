@@ -1,14 +1,19 @@
 <template>
   <div class="bg-white dark:bg-slate-800 md:rounded-lg px-6 py-4 ring-1 ring-slate-900/5 mb-2 md:mb-4">
     <div class="sm:flex">
-      <!-- Avatar -->
-      <img
-        src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
-        class="rounded-full h-min mr-4"
-        alt="Avatar"
-        width="48px"
-        height="48px"
-      >
+      <!-- User -->
+      <div class="flex sm:block items-center">
+        <!-- Avatar -->
+        <img
+          src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
+          class="rounded-full h-min mr-2 sm:mr-5"
+          alt="Avatar"
+          width="48px"
+          height="48px"
+        >
+
+        <span class="text-slate-900 dark:text-white font-medium sm:hidden">Dendy Armandiaz Aziz</span>
+      </div>
 
       <div class="w-full">
         <form @submit.prevent="submit">

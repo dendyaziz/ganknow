@@ -12,7 +12,7 @@
       <!-- Content -->
       <div class="text-slate-900 dark:text-white">
         <!-- Message -->
-        <div class="mt-1.5 font-medium">
+        <div class="mt-1 sm:mt-1.5 font-medium">
           {{ $t('Let\'s enable donations and start earning now!') }}
         </div>
 
