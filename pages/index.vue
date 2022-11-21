@@ -51,7 +51,7 @@
           <textarea
             id="post"
             name="post"
-            class="w-full bg-white dark:bg-slate-800 text-lg py-2"
+            class="w-full bg-white dark:bg-slate-800 text-lg py-2 outline-none resize-none"
             :placeholder="$t('Share something with your supporters?')"
             rows="1"
             @input="growTextarea"
