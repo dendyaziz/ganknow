@@ -21,17 +21,23 @@
 </template>
 
 <script>
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { mapState } from 'vuex'
+
 export default {
   name: 'Default',
   head() {
     return {
       htmlAttrs: {
-        class: 'dark',
+        class: this.isDark ? 'dark' : undefined,
       },
       bodyAttrs: {
         class: 'antialiased text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-850 dark:md:bg-slate-900',
       },
     }
+  },
+  computed: {
+    ...mapState('theme', ['isDark']),
   },
 }
 </script>

@@ -1,7 +1,10 @@
 <template>
-  <div class="w-[36px] h-[36px] rounded-full hover:cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 flex items-center justify-center">
+  <button
+    type="button"
+    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg flex items-center justify-center w-[36px] h-[36px]"
+  >
     <slot />
-  </div>
+  </button>
 </template>
 
 <script>

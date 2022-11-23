@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+  <nav class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a
         href="/"
@@ -17,21 +17,44 @@
         >
       </a>
       <div class="flex md:order-2">
+        <!-- Dark/light mode toggle -->
         <button
           type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden md:flex items-center justify-center"
+          @click="toggleIsDark"
         >
-          Get started
+          <svg
+            id="theme-toggle-dark-icon"
+            aria-hidden="true"
+            class="w-7 h-7"
+            :class="{'hidden': isDark}"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
+          <svg
+            id="theme-toggle-light-icon"
+            aria-hidden="true"
+            class="w-7 h-7"
+            :class="{'hidden': !isDark}"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          /></svg>
         </button>
+        <!-- Menu toggle for Mobile-view -->
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
           aria-controls="navbar-sticky"
           aria-expanded="false"
           @click="isMenuOpen = !isMenuOpen"
         >
-          <span class="sr-only">Open main menu</span>
           <svg
             class="w-6 h-6"
             aria-hidden="true"
@@ -50,23 +73,23 @@
         class="items-center justify-between w-full md:flex md:w-auto md:order-1"
         :class="{'hidden': !isMenuOpen}"
       >
-        <ul class="flex flex-col px-4 py-3.5 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 font-bold md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 uppercase">
+        <ul class="flex flex-col px-4 py-3.5 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 font-bold md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700 uppercase">
           <li>
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-slate-700 md:dark:hover:bg-transparent dark:border-slate-700"
             >{{ $t('Discover') }}</a>
           </li>
           <li>
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-slate-700 md:dark:hover:bg-transparent dark:border-slate-700"
             >{{ $t('Boost') }}</a>
           </li>
           <li>
             <a
               href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-slate-700 md:dark:hover:bg-transparent dark:border-slate-700"
             >{{ $t('Blog') }}</a>
           </li>
         </ul>
@@ -76,11 +99,22 @@
 </template>
 
 <script>
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { mapState } from 'vuex'
+
 export default {
   data() {
     return {
       isMenuOpen: false,
     }
+  },
+  computed: {
+    ...mapState('theme', ['isDark']),
+  },
+  methods: {
+    toggleIsDark() {
+      this.$store.commit('theme/TOGGLE_IS_DARK')
+    },
   },
 }
 </script>
