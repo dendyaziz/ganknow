@@ -59,7 +59,7 @@ export default {
         {
           id: 2,
           created_at: '2022-11-14T09:37:45.000000Z',
-          image_url: 'https://i.ibb.co/7Kf3yjs/Screenshot-2022-11-21-at-16-55-51.png',
+          image_url: 'https://i.ibb.co/G3QFVjP/Screenshot-2022-11-21-at-16-55-51.jpg',
           user: {
             name: 'Paddie',
             is_verified: true,
@@ -114,7 +114,7 @@ export default {
         {
           id: 1,
           created_at: '2022-11-10T09:37:45.000000Z',
-          image_url: 'https://i.ibb.co/x82X9F7/Screenshot-2022-11-21-at-21-37-17.png',
+          image_url: 'https://i.ibb.co/KWSTv3T/Screenshot-2022-11-21-at-21-37-17.jpg',
           user: {
             name: 'Paddie',
             is_verified: true,
