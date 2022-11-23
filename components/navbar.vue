@@ -1,21 +1,23 @@
 <template>
   <header class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <a
-        href="/"
-        class="flex items-center"
-      >
-        <img
-          src="https://i.ibb.co/Tq0SgVj/logo-black.png"
-          class="dark:hidden h-8 mr-3 sm:h-9"
-          alt="Ganknow Logo"
+      <div class="xl:w-[235px]">
+        <a
+          href="/"
+          class="flex items-center"
         >
-        <img
-          src="https://i.ibb.co/GWXPNZ4/logo-white.png"
-          class="hidden dark:block h-8 mr-3 sm:h-9"
-          alt="Ganknow Logo"
-        >
-      </a>
+          <img
+            src="https://i.ibb.co/Tq0SgVj/logo-black.png"
+            class="dark:hidden h-8 mr-3 sm:h-9"
+            alt="Ganknow Logo"
+          >
+          <img
+            src="https://i.ibb.co/GWXPNZ4/logo-white.png"
+            class="hidden dark:block h-8 mr-3 sm:h-9"
+            alt="Ganknow Logo"
+          >
+        </a>
+      </div>
       <div class="flex md:order-2">
         <!-- Notification button -->
         <button
