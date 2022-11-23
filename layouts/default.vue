@@ -3,13 +3,13 @@
     <!-- Navbar -->
     <Navbar />
 
-    <div class="grid md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 gap-4">
+    <div class="grid md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 gap-4 mt-[61px]">
       <!-- Left sidebar -->
       <div class="xl:col-span-2 hidden xl:block">
         <Sidebar />
       </div>
       <!-- Main content -->
-      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5 sm:px-4">
+      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5 sm:px-4 pt-2 md:pt-4">
         <Nuxt />
       </div>
       <!-- Right sidebar -->
