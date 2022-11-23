@@ -34,6 +34,7 @@ export default {
           image_url: 'https://i.ibb.co/G3QFVjP/Screenshot-2022-11-21-at-16-55-51.jpg',
           user: {
             name: 'Paddie',
+            username: 'paddie',
             is_verified: true,
             image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
           },
@@ -67,6 +68,7 @@ export default {
               created_at: '2022-11-16T09:37:45.000000Z',
               user: {
                 name: 'Dendy Armandiaz (You)',
+                username: 'dendyaziz',
                 is_verified: false,
                 image_url: 'https://i.ibb.co/d7HBdMF/avatar-dendy.jpg',
               },
@@ -77,6 +79,7 @@ export default {
               created_at: '2022-11-15T09:37:45.000000Z',
               user: {
                 name: 'Jess no Limit',
+                username: 'jessnolimit',
                 is_verified: true,
                 image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
               },
@@ -89,6 +92,7 @@ export default {
           image_url: 'https://i.ibb.co/KWSTv3T/Screenshot-2022-11-21-at-21-37-17.jpg',
           user: {
             name: 'Paddie',
+            username: 'paddie',
             is_verified: true,
             image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
           },
@@ -111,6 +115,7 @@ export default {
               created_at: '2022-11-12T09:37:45.000000Z',
               user: {
                 name: 'Jess no Limit',
+                username: 'jessnolimit',
                 is_verified: true,
                 image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
               },

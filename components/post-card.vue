@@ -18,7 +18,7 @@
             <a
               href="#"
               class="font-bold hover:underline"
-            >{{ user.name }}</a>
+            >{{ user.username }}</a>
 
             <span
               v-if="user.is_verified"
