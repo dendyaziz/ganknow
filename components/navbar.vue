@@ -17,6 +17,23 @@
         >
       </a>
       <div class="flex md:order-2">
+        <!-- Notification button -->
+        <button
+          type="button"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] flex items-center justify-center"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 13.2V10C18 7.1 15.9 4.6 13 4.1V3C13 2.4 12.6 2 12 2C11.4 2 11 2.4 11 3V4.1C8.1 4.6 6 7.1 6 10V13.2C4.8 13.6 4 14.7 4 16V18C4 18.6 4.4 19 5 19H8.1C8.6 21.1 10.8 22.4 12.9 21.9C14.3 21.5 15.4 20.4 15.8 19H19C19.6 19 20 18.6 20 18V16C20 14.7 19.2 13.6 18 13.2ZM12 20C11.3 20 10.6 19.6 10.3 19H13.8C13.4 19.6 12.7 20 12 20Z"
+            />
+          </svg>
+        </button>
         <!-- Dark/light mode toggle -->
         <button
           type="button"
