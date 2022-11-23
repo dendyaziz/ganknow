@@ -5,12 +5,12 @@
       src="~/assets/icons/info-circle-yellow.svg"
       alt="Alert icon"
       width="36px"
-      class="mr-3 shrink-0"
+      class="mr-3 shrink-0 -mt-1"
     >
     <!-- Content -->
     <div class="text-slate-900 dark:text-white">
       <!-- Message -->
-      <div class="sm:mt-1.5 font-medium">
+      <div class="font-medium">
         {{ message }}
       </div>
 
