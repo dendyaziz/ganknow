@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
+  <header class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a
         href="/"
@@ -20,7 +20,7 @@
         <!-- Notification button -->
         <button
           type="button"
-          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] flex items-center justify-center"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden md:flex items-center justify-center"
         >
           <svg
             width="24"
@@ -63,6 +63,22 @@
             clip-rule="evenodd"
           /></svg>
         </button>
+        <!-- User profile button -->
+        <button
+          type="button"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-full font-bold h-[44px] pl-1.5 pr-4 flex items-center justify-center uppercase"
+        >
+          <!-- Avatar -->
+          <img
+            src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
+            class="rounded-full h-min mr-2"
+            alt="Avatar"
+            width="32px"
+            height="32px"
+          >
+          dendyaziz
+        </button>
+
         <!-- Menu toggle for Mobile-view -->
         <button
           data-collapse-toggle="navbar-sticky"
@@ -85,6 +101,7 @@
           /></svg>
         </button>
       </div>
+      <!-- Navbar menus -->
       <div
         id="navbar-sticky"
         class="items-center justify-between w-full md:flex md:w-auto md:order-1"
@@ -112,7 +129,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script>
