@@ -5,7 +5,7 @@
     </span>
     <h3
       v-if="title"
-      class="flex items-center mb-1 text-mg font-medium text-gray-900 dark:text-white"
+      class="flex items-center mb-1 text-mg font-medium text-slate-900 dark:text-white"
     >
       {{ title }} <span
         v-if="badge"
@@ -14,11 +14,11 @@
     </h3>
     <time
       v-if="time"
-      class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+      class="block mb-2 text-sm font-normal leading-none text-slate-400 dark:text-slate-500"
     >{{ time }}</time>
     <p
       v-if="description"
-      class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
+      class="mb-4 text-base font-normal text-slate-500 dark:text-slate-400"
     >
       {{ description }}
     </p>
@@ -26,10 +26,9 @@
       v-if="ctaLabel"
       class="flex items-center"
     >
-      <a
-        href="#"
-        class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-      ><slot name="cta-icon" /> {{ ctaLabel }}</a>
+      <button class="inline-flex items-center py-2 px-4 text-sm font-medium bg-white rounded-lg border border-slate-200 hover:bg-slate-100 hover:text-slate-900 focus:z-10 focus:ring-4 focus:outline-none focus:ring-slate-200 focus:text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700">
+        <slot name="cta-icon" /> {{ ctaLabel }}
+      </button>
 
       <span class="hover:text-primary-500 text-sm font-medium cursor-pointer mr-1 hover:underline ml-3">{{ $t('Skip') }}</span>
     </div>
