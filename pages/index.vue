@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[680px] mx-auto">
+  <div class="md:max-w-[680px] mx-auto">
     <!-- Alert -->
     <Alert
       :message="$t('Let\'s enable donations and start earning now!')"

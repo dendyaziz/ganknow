@@ -7,6 +7,7 @@ export default {
   Share: 'Share',
   'Change price': 'Change price',
   'Write a comment': 'Write a comment',
+  Feed: 'Feed',
   Discover: 'Discover',
   Boost: 'Boost',
   Blog: 'Blog',

@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <div class="flex flex-wrap items-center justify-between mx-auto">
       <div class="xl:w-[235px]">
         <a
           href="/"
@@ -18,11 +18,28 @@
           >
         </a>
       </div>
-      <div class="flex md:order-2">
+      <div class="flex items-center md:order-2">
+        <!-- Message button -->
+        <button
+          type="button"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] flex items-center justify-center"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12C2 14.3 2.8 16.5 4.3 18.3L2.3 20.3C1.9 20.7 1.9 21.3 2.3 21.7C2.5 21.9 2.7 22 3 22H12C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM13 15H7C6.4 15 6 14.6 6 14C6 13.4 6.4 13 7 13H13C13.6 13 14 13.4 14 14C14 14.6 13.6 15 13 15ZM17 11H7C6.4 11 6 10.6 6 10C6 9.4 6.4 9 7 9H17C17.6 9 18 9.4 18 10C18 10.6 17.6 11 17 11Z"
+            />
+          </svg>
+        </button>
         <!-- Notification button -->
         <button
           type="button"
-          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden md:flex items-center justify-center"
+          class="relative text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] flex items-center justify-center"
         >
           <svg
             width="24"
@@ -35,11 +52,12 @@
               d="M18 13.2V10C18 7.1 15.9 4.6 13 4.1V3C13 2.4 12.6 2 12 2C11.4 2 11 2.4 11 3V4.1C8.1 4.6 6 7.1 6 10V13.2C4.8 13.6 4 14.7 4 16V18C4 18.6 4.4 19 5 19H8.1C8.6 21.1 10.8 22.4 12.9 21.9C14.3 21.5 15.4 20.4 15.8 19H19C19.6 19 20 18.6 20 18V16C20 14.7 19.2 13.6 18 13.2ZM12 20C11.3 20 10.6 19.6 10.3 19H13.8C13.4 19.6 12.7 20 12 20Z"
             />
           </svg>
+          <span class="absolute w-2 h-2 top-1.5 right-1.5 bg-primary-500 rounded-full" />
         </button>
         <!-- Dark/light mode toggle -->
         <button
           type="button"
-          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden md:flex items-center justify-center"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden sm:flex items-center justify-center"
           @click="toggleIsDark"
         >
           <svg
@@ -68,17 +86,17 @@
         <!-- User profile button -->
         <button
           type="button"
-          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-full font-bold h-[44px] pl-1.5 pr-4 flex items-center justify-center uppercase"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-full h-[44px] px-1.5 sm:pr-4 ml-3 flex items-center justify-center"
         >
           <!-- Avatar -->
           <img
             src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
-            class="rounded-full h-min mr-2"
+            class="rounded-full h-min sm:mr-2"
             alt="Avatar"
             width="32px"
             height="32px"
           >
-          dendyaziz
+          <span class="hidden sm:inline font-bold uppercase">dendyaziz</span>
         </button>
 
         <!-- Menu toggle for Mobile-view -->
@@ -110,6 +128,12 @@
         :class="{'hidden': !isMenuOpen}"
       >
         <ul class="flex flex-col px-4 py-3.5 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 font-bold md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700 uppercase">
+          <li class="list-item md:hidden lg:list-item">
+            <a
+              href="#"
+              class="block py-2 pl-3 pr-4 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent hover:text-primary-500 dark:hover:text-primary-500 md:p-0 dark:text-white dark:hover:bg-slate-700 md:dark:hover:bg-transparent dark:border-slate-700"
+            >{{ $t('Feed') }}</a>
+          </li>
           <li>
             <a
               href="#"
