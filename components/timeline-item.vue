@@ -1,6 +1,6 @@
 <template>
   <li class="ml-6">
-    <span class="flex absolute -left-4 -mt-1 justify-center items-center w-8 h-8 bg-blue-200 rounded-full dark:bg-blue-900 text-blue-600 dark:text-blue-400">
+    <span class="flex absolute -left-4 -mt-1 justify-center items-center w-8 h-8 bg-primary-50 rounded-full dark:bg-primary-900 text-primary-600 dark:text-primary-300">
       <slot name="icon" />
     </span>
     <h3
