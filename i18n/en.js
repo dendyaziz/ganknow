@@ -10,4 +10,13 @@ export default {
   Discover: 'Discover',
   Boost: 'Boost',
   Blog: 'Blog',
+  'Complete Your Profile': 'Complete Your Profile',
+  'Upload Profile Picture': 'Upload Profile Picture',
+  'Show off your self with a profile image!': 'Show off your self with a profile image!',
+  'Upload Image': 'Upload Image',
+  'Upload Cover Image': 'Upload Cover Image',
+  'Set A Goal': 'Set A Goal',
+  'Write A Post': 'Write A Post',
+  'Setup Membership': 'Setup Membership',
+  'Share Your Profile': 'Share Your Profile',
 }

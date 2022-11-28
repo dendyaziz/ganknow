@@ -3,18 +3,18 @@
     <!-- Navbar -->
     <Navbar />
 
-    <div class="grid md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 gap-4 mt-[61px]">
+    <div class="grid md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-11 2xl:grid-cols-9 gap-4 mt-[61px] sm:mx-4">
       <!-- Left sidebar -->
-      <div class="xl:col-span-2 hidden xl:block">
+      <div class="xl:col-span-3 2xl:col-span-2 hidden xl:block sm:px-2 pt-2">
         <Sidebar />
       </div>
       <!-- Main content -->
-      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5 sm:px-4 pt-2 md:pt-4">
+      <div class="md:col-span-4 lg:col-span-5 xl:col-span-5 2xl:col-span-5 pt-2 md:pt-4">
         <Nuxt />
       </div>
       <!-- Right sidebar -->
-      <div class="md:col-span-2 lg:col-span-3 xl:col-span-2 hidden md:block">
-        <div>Sidebar</div>
+      <div class="md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-2 pt-2 md:pt-4 hidden md:block">
+        <suggestion />
       </div>
     </div>
   </div>
