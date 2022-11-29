@@ -20,4 +20,7 @@ export default {
   'Write A Post': 'Write A Post',
   'Setup Membership': 'Setup Membership',
   'Share Your Profile': 'Share Your Profile',
+  Skip: 'Skip',
+  Gold: 'Gold',
+  Earnings: 'Earnings',
 }

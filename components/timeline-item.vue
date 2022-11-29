@@ -52,7 +52,7 @@ export default {
     },
     description: {
       type: String,
-      required: true,
+      default: '',
     },
     ctaLabel: {
       type: String,
