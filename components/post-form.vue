@@ -6,7 +6,7 @@
         <!-- Avatar -->
         <img
           src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
-          class="rounded-full h-min mr-2 sm:mr-5"
+          class="rounded-full h-min mr-2 sm:mr-4"
           alt="Avatar"
           width="48px"
           height="48px"

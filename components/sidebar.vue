@@ -9,7 +9,7 @@
           alt="Avatar"
           width="48px"
           height="48px"
-          class="rounded-full h-min mr-2 sm:mr-5"
+          class="rounded-full h-min mr-4"
         >
         <!-- Profile -->
         <div>
