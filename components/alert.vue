@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-yellow-500/10 hover:bg-yellow-500/20 hover:cursor-pointer md:rounded-md pl-4 pr-6 py-4 mb-2 md:mb-3 ring-1 ring-yellow-500/70 flex flex-row items-start">
+  <div class="bg-yellow-500/10 hover:bg-yellow-500/20 hover:cursor-pointer md:rounded-md pl-4 pr-6 py-4 mb-2 md:mb-3 border border-yellow-500/70 flex flex-row items-start">
     <!-- Icon -->
     <img
       src="~/assets/icons/info-circle-yellow.svg"
