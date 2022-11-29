@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Profile card -->
-    <div class="border border-slate-300 dark:border-slate-700 rounded-lg py-4 px-3 mb-2">
+    <div class="border border-slate-300 dark:border-slate-700 rounded-lg py-4 px-3 mb-4">
       <div class="flex items-center border-b border-slate-300 dark:border-slate-700 pb-4 mb-4">
         <!-- Profile picture -->
         <img
@@ -26,11 +26,14 @@
         </div>
       </div>
 
+      <!-- Gold -->
       <div class="flex items-center justify-between mb-1">
         <span class="mr-2">{{ $t('Gold') }}</span>
         <div class="relative cursor-default">
           <div class="transition-opacity flex items-center justify-end opacity-0 hover:opacity-100 min-w-[100px] bg-slate-50 dark:bg-slate-900">
+            <!-- Amount -->
             <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">80</span>
+            <!-- Gold icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-4 h-4"
@@ -54,11 +57,14 @@
         </div>
       </div>
 
+      <!-- Earnings -->
       <div class="flex items-center justify-between">
         <span class="mr-2">{{ $t('Earnings') }}</span>
         <div class="relative cursor-default">
           <div class="transition-opacity flex items-center justify-end opacity-0 hover:opacity-100 min-w-[100px] bg-slate-50 dark:bg-slate-900">
+            <!-- Amount -->
             <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">$512</span>
+            <!-- Currency -->
             <span class="font-bold">USD</span>
           </div>
           <span class="absolute right-0 top-1 -z-10">*****</span>
@@ -71,7 +77,7 @@
     <sidebar-menu :title="$t('Profile')">
       <template #icon>
         <svg
-          class="w-10 h-10"
+          class="w-8 h-8"
           viewBox="0 0 24 24"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -82,16 +88,17 @@
         </svg>
       </template>
     </sidebar-menu>
-    <sidebar-menu :title="$t('Profile')">
+    <!-- Settings -->
+    <sidebar-menu :title="$t('Settings')">
       <template #icon>
         <svg
-          class="w-10 h-10"
+          class="w-8 h-8"
           viewBox="0 0 24 24"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M19 2H5C3.3 2 2 3.3 2 5V19C2 20.7 3.3 22 5 22H19C20.7 22 22 20.7 22 19V5C22 3.3 20.7 2 19 2ZM12 6C13.5 6 14.8 7.2 14.8 8.8C14.8 10.4 13.6 11.6 12 11.6C10.4 11.6 9.2 10.4 9.2 8.8C9.2 7.2 10.5 6 12 6ZM16.6 17.9C16.5 17.9 16.4 18 16.2 18H7.7C7.1 18 6.7 17.5 6.7 17C6.7 16.9 6.7 16.8 6.8 16.6C7.9 13.7 11.1 12.3 14 13.4C15.5 14 16.6 15.1 17.2 16.6C17.4 17.2 17.1 17.7 16.6 17.9Z"
+            d="M20.3001 12.7C20.0001 12.3 20.0001 11.8 20.3001 11.4L21.6001 10C21.9001 9.7 21.9001 9.2 21.7001 8.8L19.7001 5.3C19.5001 4.9 19.1001 4.7 18.6001 4.8L16.7001 5.2C16.2001 5.3 15.7001 5 15.6001 4.5L15.0001 2.7C14.8001 2.3 14.4001 2 14.0001 2H10.0001C9.6001 2 9.2001 2.3 9.1001 2.7L8.4001 4.5C8.3001 5 7.8001 5.3 7.3001 5.2L5.4001 4.8C5.0001 4.7 4.6001 4.9 4.3001 5.3L2.3001 8.8C2.1001 9.1 2.2001 9.6 2.5001 9.9L3.8001 11.3C4.1001 11.7 4.1001 12.2 3.8001 12.6L2.5001 14C2.2001 14.3 2.2001 14.8 2.4001 15.2L4.4001 18.7C4.6001 19.1 5.0001 19.3 5.5001 19.2L7.4001 18.8C7.9001 18.7 8.4001 19 8.5001 19.5L9.1001 21.3C9.2001 21.7 9.6001 22 10.0001 22H14.0001C14.4001 22 14.8001 21.7 14.9001 21.3L15.5001 19.5C15.7001 19 16.2001 18.7 16.6001 18.8L18.5001 19.2C18.9001 19.3 19.4001 19.1 19.6001 18.7L21.6001 15.2C21.8001 14.8 21.8001 14.4 21.5001 14L20.3001 12.7ZM12.0001 15C10.3001 15 9.0001 13.7 9.0001 12C9.0001 10.3 10.3001 9 12.0001 9C13.7001 9 15.0001 10.3 15.0001 12C15.0001 13.7 13.7001 15 12.0001 15Z"
           />
         </svg>
       </template>

@@ -23,4 +23,6 @@ export default {
   Skip: 'Skip',
   Gold: 'Gold',
   Earnings: 'Earnings',
+  Profile: 'Profile',
+  Settings: 'Settings',
 }
