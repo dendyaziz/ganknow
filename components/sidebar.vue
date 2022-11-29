@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- Profile card -->
-    <div class="border border-slate-300 dark:border-slate-700 rounded-lg py-4 px-3 mb-4">
-      <div class="flex items-center border-b border-slate-300 dark:border-slate-700 pb-4 mb-4">
+    <div class="bg-white dark:bg-slate-800 ring-1 ring-slate-900/5 rounded-lg py-4 px-4  mb-4">
+      <div class="flex items-center border-b border-slate-900/5 dark:border-slate-700 pb-4 mb-4">
         <!-- Profile picture -->
         <img
           src="https://i.ibb.co/d7HBdMF/avatar-dendy.jpg"
@@ -30,7 +30,7 @@
       <div class="flex items-center justify-between mb-1">
         <span class="mr-2">{{ $t('Gold') }}</span>
         <div class="relative cursor-default">
-          <div class="transition-opacity flex items-center justify-end opacity-0 hover:opacity-100 min-w-[100px] bg-slate-50 dark:bg-slate-900">
+          <div class="flex items-center justify-end">
             <!-- Amount -->
             <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">80</span>
             <!-- Gold icon -->
@@ -53,7 +53,9 @@
               />
             </svg>
           </div>
-          <span class="absolute right-0 top-1 -z-10">*****</span>
+          <span
+            class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hover:opacity-0 w-full min-w-fit text-right"
+          >*****</span>
         </div>
       </div>
 
@@ -61,13 +63,15 @@
       <div class="flex items-center justify-between">
         <span class="mr-2">{{ $t('Earnings') }}</span>
         <div class="relative cursor-default">
-          <div class="transition-opacity flex items-center justify-end opacity-0 hover:opacity-100 min-w-[100px] bg-slate-50 dark:bg-slate-900">
+          <div class="flex items-center justify-end">
             <!-- Amount -->
             <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">$512</span>
             <!-- Currency -->
             <span class="font-bold">USD</span>
           </div>
-          <span class="absolute right-0 top-1 -z-10">*****</span>
+          <span
+            class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hover:opacity-0 w-full min-w-fit text-right"
+          >*****</span>
         </div>
       </div>
     </div>
@@ -84,6 +88,66 @@
         >
           <path
             d="M19 2H5C3.3 2 2 3.3 2 5V19C2 20.7 3.3 22 5 22H19C20.7 22 22 20.7 22 19V5C22 3.3 20.7 2 19 2ZM12 6C13.5 6 14.8 7.2 14.8 8.8C14.8 10.4 13.6 11.6 12 11.6C10.4 11.6 9.2 10.4 9.2 8.8C9.2 7.2 10.5 6 12 6ZM16.6 17.9C16.5 17.9 16.4 18 16.2 18H7.7C7.1 18 6.7 17.5 6.7 17C6.7 16.9 6.7 16.8 6.8 16.6C7.9 13.7 11.1 12.3 14 13.4C15.5 14 16.6 15.1 17.2 16.6C17.4 17.2 17.1 17.7 16.6 17.9Z"
+          />
+        </svg>
+      </template>
+    </sidebar-menu>
+    <!-- Shop -->
+    <sidebar-menu :title="$t('Shop')">
+      <template #icon>
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 6H3C2.4 6 2 6.4 2 7V10C2 11.1 2.9 12 4 12C5.1 12 6 11.1 6 10C6 11.1 6.9 12 8 12C9.1 12 10 11.1 10 10C10 11.1 10.9 12 12 12C13.1 12 14 11.1 14 10C14 11.1 14.9 12 16 12C17.1 12 18 11.1 18 10C18 11.1 18.9 12 20 12C21.1 12 22 11.1 22 10V7C22 6.4 21.6 6 21 6ZM4.3 4H20C20.6 4 21 3.6 21 3C21 2.4 20.6 2 20 2H4.3C3.7 2 3.3 2.4 3.3 3C3.3 3.6 3.8 4 4.3 4ZM18 12C18 13.1 17.1 14 16 14C14.9 14 14 13.1 14 12C14 13.1 13.1 14 12 14C10.9 14 10 13.1 10 12C10 13.1 9.1 14 8 14C6.9 14 6 13.1 6 12C6 13.1 5.1 14 4 14V21C4 21.6 4.4 22 5 22H9V19C9 17.3 10.3 16 12 16C13.7 16 15 17.3 15 19V22H19C19.6 22 20 21.6 20 21V14C18.9 14 18 13.1 18 12Z"
+          />
+        </svg>
+      </template>
+    </sidebar-menu>
+    <!-- Wallet -->
+    <sidebar-menu :title="$t('Wallet')">
+      <template #icon>
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 7H18V6C18 4.3 16.7 3 15 3H5C3.3 3 2 4.3 2 6V18C2 19.7 3.3 21 5 21H19C20.7 21 22 19.7 22 18V10C22 8.3 20.7 7 19 7ZM16 7H5C4.4 7 4 6.6 4 6C4 5.4 4.4 5 5 5H15C15.6 5 16 5.4 16 6V7ZM20 16H19C17.9 16 17 15.1 17 14C17 12.9 17.9 12 19 12H20V16Z"
+          />
+        </svg>
+      </template>
+    </sidebar-menu>
+    <!-- Wallet -->
+    <sidebar-menu :title="$t('Orders')">
+      <template #icon>
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 6.00008H17.6L15.9 2.60008C15.7 2.10008 15.1 1.90008 14.6 2.20008C14.1 2.40008 13.9 3.00008 14.2 3.50008L15.4 6.00008H8.6L9.9 3.40008C10.1 2.90008 9.9 2.30008 9.5 2.10008C9 1.90008 8.4 2.10008 8.1 2.60008L6.4 6.00008H5C3.3 6.00008 2 7.30008 2 9.00008C2 10.3001 2.9 11.4001 4.1 11.8001L4.8 19.3001C5 20.8001 6.3 22.0001 7.8 22.0001H16.2C17.7 22.0001 19 20.8001 19.2 19.3001L19.9 11.8001C21.1 11.4001 22 10.3001 22 9.00008C22 7.30008 20.7 6.00008 19 6.00008ZM11 17.0001C11 17.6001 10.6 18.0001 10 18.0001C9.4 18.0001 9 17.6001 9 17.0001V15.0001C9 14.4001 9.4 14.0001 10 14.0001C10.6 14.0001 11 14.4001 11 15.0001V17.0001ZM15 17.0001C15 17.6001 14.6 18.0001 14 18.0001C13.4 18.0001 13 17.6001 13 17.0001V15.0001C13 14.4001 13.4 14.0001 14 14.0001C14.6 14.0001 15 14.4001 15 15.0001V17.0001ZM19 10.0001H5C4.4 10.0001 4 9.60008 4 9.00008C4 8.40008 4.4 8.00008 5 8.00008H19C19.6 8.00008 20 8.40008 20 9.00008C20 9.60008 19.6 10.0001 19 10.0001Z"
+          />
+        </svg>
+      </template>
+    </sidebar-menu>
+    <!-- Widget -->
+    <sidebar-menu :title="$t('Widget')">
+      <template #icon>
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2H3C2.4 2 2 2.4 2 3V10C2 10.6 2.4 11 3 11H10C10.6 11 11 10.6 11 10V3C11 2.4 10.6 2 10 2ZM10 13H3C2.4 13 2 13.4 2 14V21C2 21.6 2.4 22 3 22H10C10.6 22 11 21.6 11 21V14C11 13.4 10.6 13 10 13ZM17.5 2C15 2 13 4 13 6.5C13 9 15 11 17.5 11C20 11 22 9 22 6.5C22 4 20 2 17.5 2ZM21 13H14C13.4 13 13 13.4 13 14V21C13 21.6 13.4 22 14 22H21C21.6 22 22 21.6 22 21V14C22 13.4 21.6 13 21 13Z"
           />
         </svg>
       </template>

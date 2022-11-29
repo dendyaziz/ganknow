@@ -24,5 +24,9 @@ export default {
   Gold: 'Gold',
   Earnings: 'Earnings',
   Profile: 'Profile',
+  Shop: 'Shop',
+  Wallet: 'Wallet',
+  Orders: 'Orders',
+  Widget: 'Widget',
   Settings: 'Settings',
 }

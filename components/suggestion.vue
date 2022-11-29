@@ -43,6 +43,7 @@
       <!-- Add cover image -->
       <timeline-item
         class="mb-6"
+        z
         :title="$t('Upload Cover Image')"
       >
         <template #icon>
