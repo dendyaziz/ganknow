@@ -29,4 +29,7 @@ export default {
   Orders: 'Orders',
   Widget: 'Widget',
   Settings: 'Settings',
+  Feedback: 'Feedback',
+  'Select visibility': 'Select visibility',
+  'Dismiss all': 'Dismiss all',
 }

@@ -30,6 +30,7 @@
         <slot name="cta-icon" /> {{ ctaLabel }}
       </button>
 
+      <!-- Skip button -->
       <span class="hover:text-primary-500 text-sm font-medium cursor-pointer mr-1 hover:underline ml-3">{{ $t('Skip') }}</span>
     </div>
   </li>

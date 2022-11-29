@@ -1,9 +1,15 @@
 <template>
   <div class="bg-white dark:bg-slate-800 md:rounded-md ring-1 ring-slate-900/5 mb-2 md:mb-3 px-4 sm:px-6 py-4">
-    <!-- Title -->
-    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-5">
-      {{ $t('Complete Your Profile') }}
-    </h3>
+    <div class="flex items-center justify-between mb-5">
+      <!-- Title -->
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        {{ $t('Complete Your Profile') }}
+      </h3>
+      <!-- Dismiss button -->
+      <span
+        class="hover:text-primary-500 text-sm font-medium cursor-pointer mr-1 hover:underline ml-3"
+      >{{ $t('Dismiss all') }}</span>
+    </div>
 
     <!-- Suggestions -->
     <timeline>
