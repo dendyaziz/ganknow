@@ -32,4 +32,11 @@ export default {
   Feedback: 'Feedback',
   'Select visibility': 'Select visibility',
   'Dismiss all': 'Dismiss all',
+  Upgrade: 'Upgrade',
+  Reply: 'Reply',
+  'See previous comments': 'See previous comments',
+  'Enable Membership': 'Enable Membership',
+  'Enable now': 'Enable now',
+  'Paid post': 'Paid post',
+  'Send post': 'Send post',
 }

@@ -13,7 +13,6 @@
     <PostCard
       v-for="item in posts"
       :key="`post-${item.id}`"
-      :post-id="item.user"
       :user="item.user"
       :created-at="item.created_at"
       :content="item.content"

@@ -164,7 +164,7 @@
                 type="submit"
                 class="text-white bg-primary-500 hover:bg-primary-600 focus:outline-none font-medium rounded-sm text-sm px-5 py-2.5 text-center font-bold uppercase mt-3"
               >
-                {{ $t('Send Post') }}
+                {{ $t('Send post') }}
               </button>
             </div>
           </div>

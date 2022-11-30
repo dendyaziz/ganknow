@@ -23,7 +23,7 @@
             </div>
             <div class="flex items-center">
               <!-- Subscription -->
-              <span class="inline-flex items-center justify-center px-2 py-0.5 mr-2 text-sm font-bold bg-primary-500 dark:bg-primary-500 text-white rounded">{{ $t('Boost') }}+</span>
+              <span class="inline-flex items-center justify-center px-2 py-0.5 mr-2 text-sm font-bold bg-primary-500 dark:bg-primary-500 text-white rounded">{{ $t('Boost') }}</span>
               <!-- Upgrade -->
               <span class="hover:text-primary-500 text-sm cursor-pointer hover:underline border-l pl-2 border-slate-300 dark:border-slate-500">{{ $t('Upgrade') }}</span>
             </div>
@@ -33,7 +33,7 @@
         <!-- Gold -->
         <div class="flex items-center justify-between mb-1">
           <span class="mr-2">{{ $t('Gold') }}</span>
-          <div class="relative">
+          <div class="relative cursor-default">
             <div class="flex items-center justify-end">
               <!-- Amount -->
               <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">80</span>
@@ -66,7 +66,7 @@
         <!-- Earnings -->
         <div class="flex items-center justify-between">
           <span class="mr-2">{{ $t('Earnings') }}</span>
-          <div class="relative">
+          <div class="relative cursor-default">
             <div class="flex items-center justify-end">
               <!-- Amount -->
               <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">$512</span>

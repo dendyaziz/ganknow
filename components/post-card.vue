@@ -122,7 +122,7 @@
     <div class="px-4 py-3">
       <PostComment
         v-for="item in comments"
-        :key="`post-${postId}-comment-${item.id}`"
+        :key="`post-comment-${item.id}`"
         :user="item.user"
         :created-at="item.created_at"
         :comment="item.comment"
@@ -183,10 +183,6 @@
 /* eslint-disable no-param-reassign */
 export default {
   props: {
-    postId: {
-      type: Number,
-      required: true,
-    },
     user: {
       type: Object,
       required: true,
