@@ -23,7 +23,7 @@
             </div>
             <div class="flex items-center">
               <!-- Subscription -->
-              <span class="inline-flex items-center justify-center px-2 py-0.5 mr-2 text-sm font-bold bg-primary-500 dark:bg-primary-500 text-white dark:text-slate-900 rounded">{{ $t('Boost') }}</span>
+              <span class="inline-flex items-center justify-center px-2 py-0.5 mr-2 text-sm font-bold bg-primary-500 dark:bg-primary-500 text-white rounded">{{ $t('Boost') }}+</span>
               <!-- Upgrade -->
               <span class="hover:text-primary-500 text-sm cursor-pointer hover:underline border-l pl-2 border-slate-300 dark:border-slate-500">{{ $t('Upgrade') }}</span>
             </div>

@@ -124,8 +124,7 @@
       <!-- Navbar menus -->
       <div
         id="navbar-sticky"
-        class="items-center justify-between w-full md:flex md:w-auto md:order-1"
-        :class="{'hidden': !isMenuOpen}"
+        class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden"
       >
         <ul class="flex flex-col px-4 py-3.5 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 font-bold md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700 uppercase">
           <li class="list-item md:hidden lg:list-item">
@@ -163,11 +162,6 @@
 import { mapState } from 'vuex'
 
 export default {
-  data() {
-    return {
-      isMenuOpen: false,
-    }
-  },
   computed: {
     ...mapState('theme', ['isDark']),
   },
