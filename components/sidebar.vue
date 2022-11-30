@@ -33,7 +33,7 @@
         <!-- Gold -->
         <div class="flex items-center justify-between mb-1">
           <span class="mr-2">{{ $t('Gold') }}</span>
-          <div class="relative cursor-default">
+          <div class="relative">
             <div class="flex items-center justify-end">
               <!-- Amount -->
               <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">80</span>
@@ -58,7 +58,7 @@
               </svg>
             </div>
             <span
-              class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hover:opacity-0 w-full min-w-fit text-right"
+              class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hidden xl:block hover:opacity-0 w-full min-w-fit text-right"
             >*****</span>
           </div>
         </div>
@@ -66,7 +66,7 @@
         <!-- Earnings -->
         <div class="flex items-center justify-between">
           <span class="mr-2">{{ $t('Earnings') }}</span>
-          <div class="relative cursor-default">
+          <div class="relative">
             <div class="flex items-center justify-end">
               <!-- Amount -->
               <span class="text-lg text-slate-900 dark:text-white font-bold mr-1">$512</span>
@@ -74,7 +74,7 @@
               <span class="font-bold">USD</span>
             </div>
             <span
-              class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hover:opacity-0 w-full min-w-fit text-right"
+              class="absolute right-0 top-1 z-10 bg-white dark:bg-slate-800 transition-opacity hidden xl:block hover:opacity-0 w-full min-w-fit text-right"
             >*****</span>
           </div>
         </div>
