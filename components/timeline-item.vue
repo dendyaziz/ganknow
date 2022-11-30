@@ -45,7 +45,7 @@ export default {
     },
     badge: {
       type: String,
-      required: true,
+      default: '',
     },
     time: {
       type: String,

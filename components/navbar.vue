@@ -57,7 +57,7 @@
         <!-- Dark/light mode toggle -->
         <button
           type="button"
-          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden sm:flex items-center justify-center"
+          class="text-slate-500 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700 rounded-lg h-[40px] w-[40px] hidden lg:flex items-center justify-center"
           @click="toggleIsDark"
         >
           <svg
@@ -103,10 +103,10 @@
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
+          class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg xl:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
           aria-controls="navbar-sticky"
           aria-expanded="false"
-          @click="isMenuOpen = !isMenuOpen"
+          @click="toggleSidebar"
         >
           <svg
             class="w-6 h-6"
@@ -174,6 +174,9 @@ export default {
   methods: {
     toggleIsDark() {
       this.$store.commit('theme/TOGGLE_IS_DARK')
+    },
+    toggleSidebar() {
+      this.$store.commit('theme/TOGGLE_SIDEBAR')
     },
   },
 }

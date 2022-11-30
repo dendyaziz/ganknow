@@ -44,7 +44,7 @@ module.exports = {
         width: 'width',
         spacing: 'margin, padding',
         placement: 'top, right, bottom, left',
-        slide: 'top, opacity',
+        slide: 'top, left, opacity',
       },
       container: {
         center: true,
