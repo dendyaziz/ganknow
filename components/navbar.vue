@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white px-2 sm:px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
+  <header class="bg-white px-4 py-2.5 sm:py-1 dark:bg-slate-900 fixed w-full z-20 top-0 left-0 border-b border-slate-200 dark:border-slate-800">
     <div class="flex flex-wrap items-center justify-between mx-auto">
       <div class="xl:w-[235px]">
         <a
@@ -8,12 +8,12 @@
         >
           <img
             src="https://i.ibb.co/Tq0SgVj/logo-black.png"
-            class="dark:hidden h-8 mr-3 sm:h-9"
+            class="dark:hidden h-9 mr-3 sm:h-9"
             alt="Ganknow Logo"
           >
           <img
             src="https://i.ibb.co/GWXPNZ4/logo-white.png"
-            class="hidden dark:block h-8 mr-3 sm:h-9"
+            class="hidden dark:block h-9 mr-3 sm:h-9"
             alt="Ganknow Logo"
           >
         </a>
@@ -103,7 +103,7 @@
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="inline-flex items-center p-2 text-sm text-slate-500 rounded-lg xl:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
+          class="inline-flex items-center p-2 ml-2 text-sm text-slate-500 rounded-lg xl:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-200 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:ring-slate-600"
           aria-controls="navbar-sticky"
           aria-expanded="false"
           @click="toggleSidebar"
