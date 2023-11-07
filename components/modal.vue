@@ -13,7 +13,7 @@
       @click="close"
     >
       <div
-        class="relative w-full max-w-md h-full md:h-auto"
+        class="relative w-full max-w-md h-fit"
         @click.stop
       >
         <!-- Modal content -->
