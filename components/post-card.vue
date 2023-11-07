@@ -45,16 +45,36 @@
         </div>
       </div>
 
+      <h3
+        v-if="title"
+        class="text-slate-900 dark:text-white mt-4 text-base font-bold tracking-tight"
+        :class="{ 'mb-3': content }"
+      >
+        {{ title }}
+      </h3>
+
       <!-- Content -->
       <div
-        class="text-slate-900 dark:text-white mt-4 break-word text-sm"
+        v-if="content"
+        class="text-slate-900 dark:text-white break-word text-sm"
+        :class="{ 'mt-4': !title }"
         v-html="content"
       />
     </div>
 
     <!-- Post image -->
     <div
-      v-if="imageUrl"
+      v-if="imageUrl && imageUrl.includes('mp4')"
+      class="bg-slate-100 dark:bg-slate-900/50 cursor-pointer"
+    >
+      <video
+        :src="imageUrl"
+        alt="Post video"
+        class="w-100 max-h-[480px] mx-auto"
+      ></video>
+    </div>
+    <div
+      v-else-if="imageUrl"
       class="bg-slate-100 dark:bg-slate-900/50 cursor-pointer"
     >
       <img
@@ -186,6 +206,10 @@ export default {
     user: {
       type: Object,
       required: true,
+    },
+    title: {
+      type: String,
+      default: null,
     },
     content: {
       type: String,
