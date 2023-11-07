@@ -153,42 +153,42 @@ export default {
           },
         ],
       },
-        {
-          id: 1,
-          created_at: '2022-11-10T09:37:45.000000Z',
-          image_url: 'https://i.ibb.co/KWSTv3T/Screenshot-2022-11-21-at-21-37-17.jpg',
-          user: {
-            name: 'Paddie',
-            username: 'paddie',
-            is_verified: true,
-            image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
-          },
-          content: '<h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">\n'
-            + '        Toxic Gaming: How To Deal With Toxic Gamers\n'
-            + '      </h3>\n'
-            + '      <p class="mb-3">\n'
-            + '        Don\'t let a toxic gamer get in the way of you playing your favorite game. 😵\n'
-            + '      </p>\n'
-            + '      <p>Click the link below to know more: </p>'
-            + '      <p><a\n'
-            + '        href="https://ganknow.com/3OmrXQg"\n'
-            + '        target="_blank"\n'
-            + '        rel="noopener noreferrer ugc"\n'
-            + '      >https://ganknow.com/3OmrXQg</a></p>\n',
-          comments: [
-            {
-              id: 1,
-              comment: 'Love it!',
-              created_at: '2022-11-12T09:37:45.000000Z',
-              user: {
-                name: 'Jess no Limit',
-                username: 'jessnolimit',
-                is_verified: true,
-                image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
-              },
+      {
+        id: 1,
+        created_at: '2022-11-10T09:37:45.000000Z',
+        image_url: 'https://i.ibb.co/KWSTv3T/Screenshot-2022-11-21-at-21-37-17.jpg',
+        user: {
+          name: 'Paddie',
+          username: 'paddie',
+          is_verified: true,
+          image_url: 'https://i.ibb.co/qnH8k8V/paddie-avatar.png',
+        },
+        content: '<h3 class="text-slate-900 dark:text-white mb-3 text-base font-bold tracking-tight">\n'
+          + '        Toxic Gaming: How To Deal With Toxic Gamers\n'
+          + '      </h3>\n'
+          + '      <p class="mb-3">\n'
+          + '        Don\'t let a toxic gamer get in the way of you playing your favorite game. 😵\n'
+          + '      </p>\n'
+          + '      <p>Click the link below to know more: </p>'
+          + '      <p><a\n'
+          + '        href="https://ganknow.com/3OmrXQg"\n'
+          + '        target="_blank"\n'
+          + '        rel="noopener noreferrer ugc"\n'
+          + '      >https://ganknow.com/3OmrXQg</a></p>\n',
+        comments: [
+          {
+            id: 1,
+            comment: 'Love it!',
+            created_at: '2022-11-12T09:37:45.000000Z',
+            user: {
+              name: 'Jess no Limit',
+              username: 'jessnolimit',
+              is_verified: true,
+              image_url: 'https://i.ibb.co/8bRSrjW/download-1.jpg',
             },
-          ],
-        }])
+          },
+        ],
+      }])
 
       this.posts = data
     },
